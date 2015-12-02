@@ -1,0 +1,23 @@
+{
+  "name": "LumenAgenda",
+  "version": "0.1.0",
+  "authors": [
+    "Alexandre Mota Monteiro <motamonteiro@gmail.com>"
+  ],
+  "description": "Agenda Telefônica",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}
