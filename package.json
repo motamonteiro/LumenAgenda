@@ -1,25 +1,9 @@
 {
-  "name": "lumen-agenda",
-  "version": "1.0.0",
-  "description": "Lumen agenda",
-  "main": "gulpfile.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "gulp",
-    "lumen",
-    "agenda"
-  ],
-  "author": "Alexandre",
-  "license": "ISC",
-  "dependencies": {
-	"laravel-elixir": "^2.0.0"
-  },
+  "private": true,
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.8.8"
+  },
+  "dependencies": {
+    "laravel-elixir": "^3.0.0"
   }
 }
