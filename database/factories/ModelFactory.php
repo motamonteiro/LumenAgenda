@@ -30,8 +30,8 @@ $factory->define(\LumenAgenda\Entities\Pessoa::class, function($faker) {
 
 $factory->define(\LumenAgenda\Entities\Telefone::class, function($faker){
     return[
-        'descrição' => $faker->randomElement(['Celular','Comercial', 'Residencial', 'Recados']),
-        'codpaís' => $faker->optional(0.7, 55)->numberBetween(1,197),
+        'descricao' => $faker->randomElement(['Celular','Comercial', 'Residencial', 'Recados']),
+        'codpais' => $faker->optional(0.7, 55)->numberBetween(1,197),
         'ddd' => $faker->numberBetween(11, 91),
         'prefixo' => $faker->randomNumber(4),
         'sufixo' => $faker->randomNumber(4),

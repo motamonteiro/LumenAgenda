@@ -4,7 +4,7 @@
     <div class="col-md-6">
         <h3>
             Deseja realmente apagar esse telefone?<br>
-            <small>{{ $telefone->descrição }}: {{ $telefone->numero }}</small>
+            <small>{{ $telefone->descricao }}: {{ $telefone->numero }}</small>
         </h3>
         <form action="{{ route('telefone.destroy', ['id' => $telefone->id]) }}" method="post">
             <input type="hidden" name="_method" value="DELETE" />

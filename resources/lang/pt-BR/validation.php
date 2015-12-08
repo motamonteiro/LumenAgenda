@@ -106,7 +106,8 @@ return [
     */
 
     'attributes'           => [
-        //
+        'descricao' => 'Descrição',
+        'codpais' => 'Código do País',
     ],
 
 ];

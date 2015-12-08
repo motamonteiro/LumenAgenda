@@ -1,5 +1,5 @@
 <?php
-//ini_set('default_charset','UTF-8');
+ini_set('default_charset','UTF-8');
 require_once __DIR__.'/../vendor/autoload.php';
 
 Dotenv::load(__DIR__.'/../');

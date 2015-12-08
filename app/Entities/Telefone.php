@@ -16,11 +16,12 @@ class Telefone extends Model
     protected $table = 'telefones';
 
     protected $fillable = [
-        'descrição',
-        'codpaís',
+        'descricao',
+        'codpais',
         'ddd',
         'prefixo',
-        'sufixo'
+        'sufixo',
+        'pessoa_id'
     ];
 
     public function pessoa()

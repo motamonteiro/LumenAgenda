@@ -27,8 +27,8 @@ class TelefoneController extends Controller
     {
         $pessoa = Pessoa::find($idPessoa);
         $validator = Validator::make($request->all(), [
-            'descrição' => 'required|in:Comercial,Celular,Residencial,Recados',
-            'codpaís' => 'required|integer|min:1|max:197',
+            'descricao' => 'required|in:Comercial,Celular,Residencial,Recados',
+            'codpais' => 'required|integer|min:1|max:197',
             'ddd' => 'required|integer|min:11|max:91',
             'prefixo' => 'required|integer|digits_between:4,5',
             'sufixo' => 'required|integer|digits:4',

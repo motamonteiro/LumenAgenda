@@ -15,22 +15,23 @@
             </div>
         @endif
         <form action="{{ route('telefone.store', ['idPessoa' => $pessoa->id]) }}" method="post" class="form-horizontal">
+            <input type="hidden" name="pessoa_id" value="{{ $pessoa->id }}">
             <div class="form-group">
                 <label for="descrição" class="col-sm-2 control-label">Descrição</label>
-                <div class="col-sm-offset-2 col-sm-10">
-                    <select name="descrição" id="descrição" class="form-control">
+                <div class="col-sm-10">
+                    <select name="descricao" id="descricao" class="form-control">
                         <option value="">Escolha uma opção</option>
-                        <option value="Comercial" {{ (old('descrição') == 'Comercial') ? 'checked' : null }}>Comercial</option>
-                        <option value="Celular" {{ (old('descrição') == 'Celular') ? 'checked' : null }}>Celular</option>
-                        <option value="Residencial" {{ (old('descrição') == 'Residencial') ? 'checked' : null }}>Residencial</option>
-                        <option value="Recados" {{ (old('descrição') == 'Recados') ? 'checked' : null }}>Recados</option>
+                        <option value="Comercial" {{ (old('descricao') == 'Comercial') ? 'selected' : null }}>Comercial</option>
+                        <option value="Celular" {{ (old('descricao') == 'Celular') ? 'selected' : null }}>Celular</option>
+                        <option value="Residencial" {{ (old('descricao') == 'Residencial') ? 'selected' : null }}>Residencial</option>
+                        <option value="Recados" {{ (old('descricao') == 'Recados') ? 'selected' : null }}>Recados</option>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label for="nome" class="col-sm-2 control-label">Código do País</label>
                 <div class="col-sm-10">
-                    <input type="number" name="codpaís" class="form-control" id="codpaís" placeholder="Código do País" value="{{ old('codpaís') }}">
+                    <input type="number" name="codpais" class="form-control" id="codpais" placeholder="Código do País" value="{{ old('codpais') }}">
                 </div>
             </div>
             <div class="form-group">
