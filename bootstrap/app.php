@@ -1,5 +1,5 @@
 <?php
-ini_set('default_charset','UTF-8');
+//ini_set('default_charset','UTF-8');
 require_once __DIR__.'/../vendor/autoload.php';
 
 Dotenv::load(__DIR__.'/../');
@@ -79,7 +79,7 @@ $app->middleware([
 */
 
 $app->register(LumenAgenda\Providers\AppServiceProvider::class);
-// $app->register(LumenAgenda\Providers\EventServiceProvider::class);
+$app->register(LumenAgenda\Providers\EventServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

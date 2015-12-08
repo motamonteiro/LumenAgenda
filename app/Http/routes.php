@@ -62,6 +62,15 @@ $app->delete('/contato/{id}', [
 /*
  * Telefones
  */
+$app->get('/contato/{idPessoa}/telefone/novo', [
+    'as' => 'telefone.create',
+    'uses' => 'TelefoneController@create'
+]);
+
+$app->post('/contato/{idPessoa}/telefone', [
+    'as' => 'telefone.store',
+    'uses' => 'TelefoneController@store'
+]);
 $app->get('/telefone/{id}/apagar', [
     'as' => 'telefone.delete',
     'uses' => 'TelefoneController@delete'

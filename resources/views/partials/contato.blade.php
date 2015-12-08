@@ -15,6 +15,6 @@
     </div>
     <div class="panel-body">
         <h3>{{ $pessoa->nome }}</h3>
-        @include('partials.telefones', ['telefones' => $pessoa->telefones])
+        @include('partials.telefones', ['pessoa' => $pessoa])
     </div>
 </div>

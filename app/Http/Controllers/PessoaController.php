@@ -52,13 +52,13 @@ class PessoaController extends Controller
         $pessoa = Pessoa::find($id);
 
         $validator = Validator::make($request->all(), [
-            'nome' => 'required|min:3|max:255|unique:pessoas, nome,'.$pessoa->id,
-            'apelido' => 'required|min:2|max:50|unique:pessoas',
+            'nome' => 'required|min:3|max:255|unique:pessoas,nome,'.$pessoa->id,
+            'apelido' => 'required|min:2|max:50|unique:pessoas,apelido,'.$pessoa->id,
             'sexo' => 'required'
         ]);
 
         if ($validator->fails()) {
-            return redirect()->route('pessoa.edit')
+            return redirect()->route('pessoa.edit', ['id' => $pessoa->id])
                 ->withErrors($validator)
                 ->withInput();
         }

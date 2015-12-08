@@ -1,6 +1,6 @@
-<p><a href="#" class="label label-primary">Novo Telefone</a></p>
+<p><a href="{{ route('telefone.create', ['idPessoa' => $pessoa->id]) }}" class="label label-primary">Novo Telefone</a></p>
 <table class="table table-hover">
-    @foreach($telefones as $telefone)
+    @foreach($pessoa->telefones as $telefone)
         <tr>
             <td>{{ $telefone->descrição }}</td>
             <td>{{ $telefone->numero }}</td>
